@@ -118,6 +118,8 @@ btnHold.addEventListener('click', function () {
       btnRoll.disabled = true;
       btnHold.disabled = true;
       dice.classList.add('hidden');
+      btnRoll.setAttribute('disabled', 'true');
+      btnHold.setAttribute('disabled', 'true');
     } else {
       player2.classList.remove('player--active');
       player1.classList.add('player--active');
@@ -141,7 +143,7 @@ btnNew.addEventListener('click', () => {
   player2.classList.remove('player--active');
   name1.innerHTML = 'PLAYER 1';
   name2.innerHTML = 'PLAYER 2';
-  btnRoll.disabled = false;
-  btnHold.disabled = false;
   dice.classList.add('hidden');
+  btnRoll.setAttribute('enabled', 'true');
+  btnHold.setAttribute('enabled', 'true');
 });
