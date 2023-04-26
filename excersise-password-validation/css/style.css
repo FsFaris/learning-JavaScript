@@ -1,0 +1,120 @@
+body {
+    background-color: #FFDE59;
+    width: 80%;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+	color: #FFF;
+	font-weight: bold;
+    margin-left: 0px;
+	text-align: left;
+	width: auto;
+    padding-bottom: 5px;
+}
+.d-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.text-dark {
+    color: #222;
+    font-size: 18px;
+}
+.mw-600 {
+    max-width: 620px;
+    margin-top: 100px;
+    justify-content: space-between;
+}
+.g-12 {
+    gap: 12px;
+}
+h1 span {
+	background-color: #98BF21;
+	padding: 10px 20px;
+	border-radius: 25px;
+}
+.field-group, .button-group, .result-group {
+    background-color: #98BF21;
+	color: #FFF;
+	font-weight: bold;
+	font-size: 26px;
+	text-align: left;
+	padding: 10px 20px;
+    border-radius: 5px;
+}
+.button-group{
+    background-color: transparent;
+    padding: 0px;
+}
+.result-group{
+    background-color: transparent;
+    font-family: consolas;
+    font-weight: normal;
+    font-weight: normal;
+    padding: 5px 20px;
+}
+.field {
+    vertical-align: middle;
+}
+.error{
+	color: red;
+	font-size: 16px;
+    font-weight: 700;
+}
+button:disabled {
+    background-color: #d0d0bb;
+    cursor: not-allowed;
+}
+input:disabled {
+    cursor: not-allowed;
+}
+.button {
+    background-color: #98BF21;
+	color:#fff;
+	font-weight: bold;
+	font-size: 18px;
+	padding: 10px 20px;
+	border-radius: 10px;
+    border:0;
+    outline: none;
+    cursor: pointer;
+    transition: .2s linear all;
+}  
+.submit-button:hover{
+    background-color: #657c1f;
+}   
+input{
+    font-size: 24px;
+    padding: 5px 15px;
+    outline: none;
+    border: 0px;
+    border-radius: 20px;
+}           
+/*Standard*/
+.animate {
+	position: absolute;
+	/*animation-timing-function: ease;	*/
+    animation: mymove 2s 1 ease forwards;
+    -webkit-animation: mymove 2s 1 ease forwards;
+	/*animation: mymove 2s 1 ease-in-out;*/
+}
+/*Standard*/
+@keyframes mymove {
+    from {
+    	 transform: translateX(-190px);
+    }
+    to {
+         transform: translateX(0px);
+    }
+}
+/*Chrome, Safari*/
+@-webkit-keyframes mymove {
+    from {left: -190px;}
+    to {left: 0px;}
+}
+code {
+    background: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
